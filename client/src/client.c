@@ -66,7 +66,7 @@ t_log *iniciar_logger(void)
 
 t_config *iniciar_config(void)
 {
-	t_config *nuevo_config = config_create("/home/utnso/Desktop/TP0/tp0h/client/cliente.config");
+	t_config *nuevo_config = config_create("cliente.config");
 	if(nuevo_config==NULL){
 		perror("config no se pudo crear");
 		exit(EXIT_FAILURE);
